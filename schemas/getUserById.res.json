@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "GetUserByIdResponse",
+  "description": "Describe the response",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The unique identifier for a user",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "id"
+  ]
+}
