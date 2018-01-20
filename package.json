@@ -1,18 +1,37 @@
 {
   "name": "api-express",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Servers in JSX",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "express": "^4.16.2"
-  }
+  },
+  "devDependencies": {
+    "jest": "^22.1.4"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrKoN/api-express.git"
+  },
+  "keywords": [
+    "jsx",
+    "api",
+    "server"
+  ],
+  "author": "Oleksii Rudenko <alexei.rudenko@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OrKoN/api-express/issues"
+  },
+  "homepage": "https://github.com/OrKoN/api-express#readme"
 }
