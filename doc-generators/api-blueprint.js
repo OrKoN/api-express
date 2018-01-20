@@ -14,5 +14,4 @@ function getDoc(service, cb) {
   cb(null, docs);
 }
 
-
 module.exports = getDoc;

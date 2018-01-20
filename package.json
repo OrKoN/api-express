@@ -11,13 +11,24 @@
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.6.1",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "lint-staged": "^6.0.1"
   },
   "devDependencies": {
-    "jest": "^22.1.4"
+    "husky": "^0.14.3",
+    "jest": "^22.1.4",
+    "prettier": "^1.10.2"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "precommit": "lint-staged",
+    "format": "prettier --single-quote --trailing-comma all --write '**/*.js'"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --single-quote --trailing-comma all --write",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
