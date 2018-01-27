@@ -1,12 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "GetUserByIdResponse",
+  "title": "GetHelloResponse",
   "description": "Describe the response",
   "type": "object",
   "properties": {
-    "id": {
-      "description": "The unique identifier for a user",
-      "type": "integer"
+    "message": {
+      "description": "The \"Hello :who\" message",
+      "type": "string"
     }
   },
   "required": [

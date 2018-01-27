@@ -1,5 +1,3 @@
-/** @jsx ApiExpress.h */
-
 import ApiExpress, {
   Service,
   Middleware,
@@ -8,24 +6,24 @@ import ApiExpress, {
   Request,
   Response,
   PathParameter,
-} from '.';
+} from '../..';
 
 export default function() {
   return <Service
-    id="my-service"
+    id="hello-world-service"
     port={3000}
     version="0.1.0"
-    contact="Alex"
+    contact="orkon"
     tags={['node', 'service']}
     endpoint="http://dev.server.at.home"
   >
     <Middleware use={require('./middleware/logger')} />
-    <Group name="Users" description="All about users">
-      <Route path="/users/:id" method="get" handler={require('./handlers/getUserById')}>
+    <Group name="Hello" description="All routes related to saying Hello">
+      <Route description={'Generates a message in the format "Hello :who!"'} path="/hello/:who" method="get" handler={require('./handlers/getHello')}>
         <Request>
-          <PathParameter name="id" type="string" />
+          <PathParameter name="who" type="string" />
         </Request>
-        <Response schema={require('./schemas/getUserById.res.json')} />
+        <Response schema={require('./schemas/getHello.res.json')} />
       </Route>
     </Group>
   </Service>;

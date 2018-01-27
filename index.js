@@ -1,4 +1,5 @@
 const h = require('./lib/h');
+const compile = require('./lib/compile');
 const Service = require('./lib/models/Service');
 const Middleware = require('./lib/models/Middleware');
 const Group = require('./lib/models/Group');
@@ -10,6 +11,7 @@ const QueryParameter = require('./lib/models/QueryParameter');
 
 module.exports = {
   h,
+  compile,
   Service,
   Middleware,
   Group,

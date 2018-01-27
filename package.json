@@ -8,15 +8,17 @@
     "lib": "lib"
   },
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
+    "babel-core": "6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
+    "babel-plugin-transform-react-jsx": "6.24.1",
     "express": "^4.16.2",
+    "indent-string": "^3.2.0",
     "lint-staged": "^6.0.1"
   },
   "devDependencies": {
     "husky": "^0.14.3",
     "jest": "^22.1.4",
+    "lodash": "4.17.4",
     "prettier": "^1.10.2"
   },
   "scripts": {

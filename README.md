@@ -1,8 +1,8 @@
-# API express
+# `api-express`
 
-API express is an attempt to come up with universal language for defining and documenting APIs using [JSX](https://jsx.github.io/) which became widely known with the rise of [React](https://reactjs.org/) popularity.
+`api-express` is an attempt to come up with universal language for defining and documenting HTTP APIs using [JSX](https://jsx.github.io/).
 
-Ultimately, API express allows you to define the structure of your API service in JSX. Using this definition API express is able to **run the service**, **validate request and response formats** and **generate documentation** for your service. The definition is a live JavaScript code which allows changing the additional features (docs/validation/formats etc) of your API service without changing the application parts.
+Ultimately, `api-express` allows you to define the structure of your API service in JSX. Using this definition, `api-express` is able to **run the service**, **validate request and response formats** and **generate documentation** for your service. The definition is a live JavaScript code which allows changing the additional features (docs/validation/formats etc) of your API service without changing the application parts.
 
 ## Example
 
